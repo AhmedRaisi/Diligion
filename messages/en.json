@@ -1,0 +1,297 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "schedule": "Schedule"
+  },
+  "common": {
+    "brand": "Diligent Visionary Consultancy",
+    "learnMore": "Learn more",
+    "viewAll": "View all services",
+    "discoverMore": "Discover more",
+    "contactEmail": "info@diligion.com",
+    "contactPhone": "+968 9255 0000",
+    "responseTime": "We reply within one business day",
+    "oman": "Oman",
+    "muscat": "Muscat, Sultanate of Oman",
+    "officeHours": "Sunday – Thursday · 9:00 – 17:00",
+    "newsletterCta": "Stay informed about Diligion insights"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Omani Consultancy Excellence",
+      "title": "Guiding leaders through complex management, financial and contract decisions",
+      "subtitle": "We help boards, executives and project teams translate strategic ambition into measurable outcomes across the Sultanate of Oman.",
+      "primaryCta": "Book a strategy session",
+      "secondaryCta": "Explore our services",
+      "trustBadge": "Trusted by government & private sector leaders"
+    },
+    "stats": {
+      "projects": {
+        "value": "140+",
+        "label": "Transformation and advisory mandates delivered"
+      },
+      "satisfaction": {
+        "value": "96%",
+        "label": "Client satisfaction maintained over the last 5 years"
+      },
+      "experience": {
+        "value": "18 yrs",
+        "label": "Collective leadership experience in consultancy"
+      }
+    },
+    "values": {
+      "title": "Why organisations choose Diligion",
+      "insight": {
+        "title": "Board-level insight",
+        "description": "We combine regional context, regulatory awareness and analytical rigour to produce recommendations your board can trust."
+      },
+      "precision": {
+        "title": "Precision delivery",
+        "description": "Our frameworks embed clarity, accountability and measurable milestones across every engagement."
+      },
+      "partnership": {
+        "title": "Partnership mentality",
+        "description": "We operate as an extension of your leadership team—responsive, transparent and invested in long-term value."
+      }
+    },
+    "services": {
+      "title": "Specialised consultancy at every stage",
+      "description": "From strategic inception through execution and performance assurance, our consultants integrate seamlessly with your teams.",
+      "management": {
+        "title": "Management Consultancy",
+        "description": "Operating model design, governance frameworks, change management and PMO leadership."
+      },
+      "financial": {
+        "title": "Financial Consultancy",
+        "description": "Financial planning, capital structuring, scenario modelling and investment appraisal."
+      },
+      "contract": {
+        "title": "Contract Consultancy",
+        "description": "Contract strategy, negotiation support, compliance frameworks and dispute readiness."
+      },
+      "cta": "View detailed services"
+    },
+    "cta": {
+      "title": "Schedule a discovery call with our senior consultants",
+      "subtitle": "Share your strategic challenge and we will outline a tailored advisory pathway within 48 hours.",
+      "button": "Book consultation"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "A consultancy rooted in diligence, shaped by vision",
+      "subtitle": "Diligion blends regional understanding with global benchmarks to enable sustainable growth for Oman’s organisations."
+    },
+    "pillars": {
+      "mission": {
+        "title": "Our mission",
+        "description": "To empower leaders with clarity, confidence and actionable insight across complex initiatives."
+      },
+      "vision": {
+        "title": "Our vision",
+        "description": "To be Oman’s trusted partner for management, financial and contract advisory—delivering measurable impact."
+      },
+      "values": {
+        "title": "Our values",
+        "description": "Integrity, precision and responsible stewardship define every engagement we take on."
+      }
+    },
+    "team": {
+      "title": "Leadership team",
+      "subtitle": "Experienced consultants guiding every engagement with diligence and vision.",
+      "members": {
+        "yafin": {
+          "name": "Yafin Al Kharusi",
+          "role": "Financial & Contract Consultancy",
+          "bio": "Strategic advisor to boards and executive committees with expertise in national programs and public-private partnerships."
+        },
+        "shaima": {
+          "name": "Shaima Al Balushi",
+          "role": "Management & Contract Consultancy",
+          "bio": "Leads complex transformation programmes with a focus on change management and stakeholder alignment."
+        },
+        "buthaina": {
+          "name": "Buthaina Al Zadjali",
+          "role": "Management Consultant",
+          "bio": "Ensures agile delivery, transparent communication and consistent client satisfaction across every mandate."
+        },
+        "consultant": {
+          "name": "Senior Consultant",
+          "role": "Management & Financial Advisory",
+          "bio": "Brings analytical depth and on-the-ground experience supporting strategic initiatives across multiple sectors."
+        },
+        "advisor": {
+          "name": "Advisory Board Member",
+          "role": "Strategic Advisor",
+          "bio": "Provides governance guidance and oversees quality assurance on priority engagements."
+        }
+      }
+    },
+    "approach": {
+      "title": "Our consulting approach",
+      "steps": {
+        "diagnose": {
+          "title": "Diagnose",
+          "description": "We use evidence-based assessments and stakeholder interviews to uncover the root causes of your challenge."
+        },
+        "design": {
+          "title": "Design",
+          "description": "We co-create programmes, frameworks and financial models tailored to your strategic objectives."
+        },
+        "deliver": {
+          "title": "Deliver",
+          "description": "We support implementation with governance, reporting and coaching to ensure sustained outcomes."
+        }
+      }
+    }
+  },
+  "services": {
+    "management": {
+      "title": "Management Consultancy",
+      "description": "Operating model redesign, governance frameworks and programme acceleration tailored to executive ambitions.",
+      "highlights": {
+        "operating": "Operating model and organisational design",
+        "governance": "Governance, policy and risk frameworks",
+        "pmos": "Transformation PMO and change leadership"
+      }
+    },
+    "financial": {
+      "title": "Financial Consultancy",
+      "description": "Financial stewardship that aligns capital allocation, performance insights and shareholder expectations.",
+      "highlights": {
+        "planning": "Integrated financial planning and budgeting",
+        "valuation": "Valuation, scenario analysis and sensitivity modelling",
+        "capital": "Capital structuring and investment readiness"
+      }
+    },
+    "contract": {
+      "title": "Contract Consultancy",
+      "description": "End-to-end contract strategy, negotiation and compliance support to protect and grow enterprise value.",
+      "highlights": {
+        "strategy": "Contract strategy, tender preparation and evaluation",
+        "compliance": "Regulatory compliance and risk mitigation",
+        "disputes": "Dispute readiness, claims prevention and resolution"
+      }
+    },
+    "hero": {
+      "title": "Specialist consultancy across the project lifecycle",
+      "subtitle": "We partner with leaders to shape strategies, mobilise delivery and monitor results—across public and private sector programmes.",
+      "cta": "Download service portfolio"
+    },
+    "process": {
+      "title": "How we deliver impact",
+      "steps": {
+        "discovery": {
+          "title": "Discovery",
+          "description": "Senior consultants facilitate workshops and interviews to align on priorities and success indicators."
+        },
+        "coDesign": {
+          "title": "Co-design",
+          "description": "We collaborate with your teams to design frameworks, models and roadmaps tailored to context."
+        },
+        "enablement": {
+          "title": "Enablement",
+          "description": "We coach teams, deploy governance tools and embed measurement systems for long-term success."
+        }
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "We ensure clarity across every engagement. If you need more detail, contact our consultancy team.",
+    "items": {
+      "engagement": {
+        "question": "How do you initiate a consultancy engagement?",
+        "answer": "We begin with a discovery workshop to understand objectives, constraints and stakeholders. Within five working days we present a tailored proposal with clear deliverables and timeline."
+      },
+      "delivery": {
+        "question": "Will Diligion embed consultants within our team?",
+        "answer": "Yes. We combine on-site and remote support depending on the engagement. Our consultants collaborate closely with your leadership and staff to accelerate adoption."
+      },
+      "financial": {
+        "question": "Can you support audits or investor readiness?",
+        "answer": "Our financial consultants prepare financial models, valuation reports and investor decks, and align documentation with audit requirements to ensure readiness."
+      },
+      "contracts": {
+        "question": "Do you work on both public and private sector contracts?",
+        "answer": "Absolutely. We have extensive experience with ROP, government entities and private investors. Our frameworks comply with Omani regulations and international standards."
+      },
+      "timeline": {
+        "question": "What is the typical project duration?",
+        "answer": "Short diagnostic engagements run 4–6 weeks, while transformation programmes can span 6–12 months. We define milestones and governance cadence from day one."
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Let’s discuss your next initiative",
+      "subtitle": "Share your objectives and our senior consultants will design the right advisory support."
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send message",
+      "namePlaceholder": "Full name",
+      "emailPlaceholder": "work-email@company.com",
+      "messagePlaceholder": "Tell us about your project, challenge or timeline.",
+      "validation": {
+        "name": "Please enter your name (at least 2 characters).",
+        "email": "Please enter a valid email address.",
+        "message": "Share at least 10 characters so we can prepare properly."
+      },
+      "state": {
+        "sending": "Sending..."
+      }
+    },
+    "channels": {
+      "title": "Direct contact",
+      "collaboration": "For collaboration opportunities",
+      "support": "For project support or urgent queries"
+    },
+    "location": {
+      "title": "Visit our office",
+      "address": "5th Floor, Business Hub Building, Muscat",
+      "hours": "Sunday – Thursday · 9:00 – 17:00"
+    },
+    "alerts": {
+      "success": "Thank you! Your message has been received and a consultant will contact you shortly.",
+      "error": "Something went wrong. Please try again or reach us directly at info@diligion.com."
+    }
+  },
+  "schedule": {
+    "hero": {
+      "title": "Schedule a consultation",
+      "subtitle": "Choose a time that suits you and meet virtually or in person with our consultants."
+    },
+    "steps": {
+      "review": {
+        "title": "Select your timeslot",
+        "description": "Choose a preferred time and share your objectives so we can match you with the right consultant."
+      },
+      "prepare": {
+        "title": "Receive confirmation",
+        "description": "We’ll confirm your meeting, share the agenda and introduce the specialist joining the session."
+      },
+      "deliver": {
+        "title": "Begin advisory journey",
+        "description": "During the consultation we will explore your challenge, share initial insight and outline next steps."
+      }
+    },
+    "note": "If you prefer, contact us directly and we will arrange a bespoke workshop.",
+    "button": "Launch scheduling tool"
+  },
+  "footer": {
+    "description": "Delivering diligent, visionary consultancy that accelerates strategic outcomes across Oman.",
+    "linksTitle": "Explore",
+    "resourcesTitle": "Resources",
+    "officeTitle": "Office",
+    "connectTitle": "Connect with us",
+    "rights": "All rights reserved."
+  }
+}
+

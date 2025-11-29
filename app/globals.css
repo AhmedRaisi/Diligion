@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-montserrat: 'Montserrat', system-ui, sans-serif;
+    --font-ibm-plex-arabic: 'IBM Plex Sans Arabic', system-ui, sans-serif;
+
+    /* spacing scale (based on 4px) */
+    --s-0: 0;
+    --s-1: 0.25rem;   /* 4px */
+    --s-2: 0.5rem;    /* 8px */
+    --s-3: 0.75rem;   /* 12px */
+    --s-4: 1rem;      /* 16px */
+    --s-6: 1.5rem;    /* 24px */
+    --s-8: 2rem;      /* 32px */
+    --s-10: 2.5rem;  /* 40px */
+    --s-12: 3rem;     /* 48px */
+    --s-16: 4rem;     /* 64px */
+    --s-20: 5rem;    /* 80px */
+    --s-24: 6rem;    /* 96px */
+
+    --section-y-sm: var(--s-12);   /* mobile */
+    --section-y-md: var(--s-20);   /* desktop */
+
+    --container-w: 72rem; /* 1152px */
+
+    /* Brand colors from palette */
+    --brand-primary: #002a54; /* Sea Blues */
+    --brand-accent: #be6238; /* Desert Neutrals */
+    --brand-neutral: #dbdbdb; /* Inner Stillness */
+    --brand-balance: #ecd4bd; /* Silent Balance */
+    --brand-bg: linear-gradient(to bottom right, #002a54, #001d3d, #003d7a);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans antialiased;
+  }
+
+  [dir='rtl'] body {
+    @apply font-arabic;
+  }
+
+  /* Scroll margin for in-page anchors */
+  [id] {
+    scroll-margin-top: 5rem;
+  }
+}
+
+@layer components {
+  /* Container helper used across pages */
+  .container {
+    max-width: var(--container-w);
+    margin-inline: auto;
+    padding-inline: var(--s-4);
+  }
+
+  /* Default vertical rhythm for sections */
+  .section {
+    padding-block: var(--section-y-sm);
+    transition: all 0.3s ease-in-out;
+  }
+
+  @media (min-width: 768px) {
+    .section {
+      padding-block: var(--section-y-md);
+    }
+  }
+
+  /* Smooth section transitions */
+  section {
+    position: relative;
+  }
+
+  section + section {
+    transition: margin-top 0.3s ease-in-out;
+  }
+
+  /* Heading spacing rules */
+  .h-group > h1,
+  .h-group > h2,
+  .h-group > h3 {
+    margin: 0;
+  }
+
+  .h-group > p {
+    margin-top: var(--s-3);
+  }
+
+  .section + .section {
+    margin-top: 0; /* spacing handled by padding, not margins */
+  }
+
+  /* Consistent grid gaps */
+  .grid-gap {
+    gap: var(--s-6);
+  }
+
+  @media (min-width: 768px) {
+    .grid-gap {
+      gap: var(--s-8);
+    }
+  }
+}
