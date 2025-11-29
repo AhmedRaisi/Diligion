@@ -3,6 +3,7 @@ import { Link } from '@/lib/i18n/routing'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import Reveal from '@/components/Reveal'
+import StatsSection from '@/components/StatsSection'
 
 export default async function HomePage() {
   const t = await getTranslations('home')
@@ -84,42 +85,11 @@ export default async function HomePage() {
         </header>
 
         {/* Stats Section */}
-        <section className="py-16 md:py-20 bg-neutral-light transition-colors duration-300">
-          <div className="container max-w-6xl mx-auto px-6 md:px-8">
-            <ul className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-14">
-              <Reveal>
-                <li className="text-center space-y-3">
-                  <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary">
-                    {t('stats.projects.value')}
-                  </div>
-                  <div className="text-sm md:text-base text-primary/80 font-medium leading-relaxed max-w-xs mx-auto">
-                    {t('stats.projects.label')}
-                  </div>
-                </li>
-              </Reveal>
-              <Reveal delay={100}>
-                <li className="text-center space-y-3">
-                  <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary">
-                    {t('stats.satisfaction.value')}
-                  </div>
-                  <div className="text-sm md:text-base text-primary/80 font-medium leading-relaxed max-w-xs mx-auto">
-                    {t('stats.satisfaction.label')}
-                  </div>
-                </li>
-              </Reveal>
-              <Reveal delay={200}>
-                <li className="text-center space-y-3">
-                  <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary">
-                    {t('stats.experience.value')}
-                  </div>
-                  <div className="text-sm md:text-base text-primary/80 font-medium leading-relaxed max-w-xs mx-auto">
-                    {t('stats.experience.label')}
-                  </div>
-                </li>
-              </Reveal>
-            </ul>
-          </div>
-        </section>
+        <StatsSection stats={{
+          projects: { value: t('stats.projects.value'), label: t('stats.projects.label') },
+          satisfaction: { value: t('stats.satisfaction.value'), label: t('stats.satisfaction.label') },
+          experience: { value: t('stats.experience.value'), label: t('stats.experience.label') }
+        }} />
 
         {/* Values Section */}
         <section className="py-20 md:py-28 bg-gradient-to-br from-primary via-primary-dark to-primary-light text-white transition-all duration-300">
