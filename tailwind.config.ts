@@ -9,24 +9,31 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Brand colors from palette
+        // Official Brand Identity Colors
+        brandNavy: '#002b57', // Primary navy - dominant background + headings
+        brandTerracotta: '#cb5b2b', // Accent terracotta - CTA buttons, highlights
+        brandBeige: '#f4e0cf', // Soft beige for alternating sections
+        brandGray: '#7b7b7b', // Neutral text gray
+        
+        // Aliased for convenience
         primary: {
-          DEFAULT: '#002a54', // Sea Blues
+          DEFAULT: '#002b57',
           dark: '#001d3d',
-          light: '#003d7a',
+          light: '#00366c',
         },
         accent: {
-          DEFAULT: '#be6238', // Desert Neutrals
+          DEFAULT: '#cb5b2b',
           dark: '#a04822',
           light: '#e66e3f',
         },
         neutral: {
-          DEFAULT: '#dbdbdb', // Inner Stillness
-          light: '#ecd4bd', // Silent Balance
+          DEFAULT: '#dbdbdb',
+          light: '#f4e0cf', // Using brand beige
+          beige: '#f4e0cf',
         },
         gray: {
-          DEFAULT: '#dbdbdb', // Inner Stillness
-          light: '#ecd4bd', // Silent Balance
+          DEFAULT: '#dbdbdb',
+          light: '#ecd4bd',
           dark: '#7b7b7b',
         },
       },
