@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useTranslations, useLocale } from 'next-intl'
 import { Link, usePathname, useRouter } from '@/lib/i18n/routing'
-import Logo from '@/components/Logo'
+import Image from 'next/image'
 
 function useScrolled(th = 8) {
   const [s, setS] = useState(false)
@@ -43,11 +43,16 @@ export default function Header() {
     >
       <nav className="container h-16 flex items-center justify-between overflow-visible" dir="ltr">
         {/* Logo */}
-        <Link href="/" className="flex items-center shrink-0 pr-6 overflow-visible">
-          <Logo
-            variant="dark"
-            className="h-10 md:h-12"
-          />
+        <Link href="/" className="flex items-center shrink-0 mr-8">
+          <div className="relative h-10 w-[200px]">
+            <Image 
+              src="/assets/logo/Short 1.png" 
+              alt="Diligion" 
+              fill
+              className="object-contain object-left"
+              priority
+            />
+          </div>
         </Link>
 
         {/* Desktop Navigation */}

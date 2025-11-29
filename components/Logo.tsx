@@ -15,6 +15,7 @@ export default function Logo({ variant = 'dark', className = '', style }: LogoPr
       style={style}
       role="img"
       aria-label="Diligion Logo"
+      preserveAspectRatio="xMinYMid meet"
     >
       <defs>
         <style>
