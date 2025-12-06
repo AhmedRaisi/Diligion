@@ -58,7 +58,7 @@ export default async function FAQPage() {
         </header>
 
         {/* FAQ Items */}
-        <section className="section transition-colors duration-300">
+        <section className="section bg-neutral-light transition-colors duration-300">
           <div className="container max-w-4xl">
             <div className="bg-white rounded-lg shadow-sm p-6 md:p-8">
               <div className="space-y-[var(--s-0)]">

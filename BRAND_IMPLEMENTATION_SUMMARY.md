@@ -104,3 +104,4 @@ All section transitions now use custom gradient utilities:
 - Dev server running on `http://localhost:3000`
 - Ready for user review
 
+

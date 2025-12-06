@@ -36,7 +36,7 @@ export default async function ServicesPage() {
         </header>
 
         {/* Management Consultancy */}
-        <section className="section transition-colors duration-300">
+        <section className="section bg-neutral-light transition-colors duration-300">
           <div className="container">
             <div className="h-group">
               <Reveal>
@@ -50,24 +50,27 @@ export default async function ServicesPage() {
                 </p>
               </Reveal>
             </div>
-            <div className="mt-[var(--s-8)] grid md:grid-cols-3 grid-gap">
+            <div className="mt-[var(--s-8)] grid md:grid-cols-3 gap-6 md:gap-8">
               <Reveal>
-                <div className="p-6 md:p-7 bg-neutral-light rounded-lg">
-                  <h3 className="font-semibold text-lg mb-2 text-primary">
+                <div className="group relative bg-white p-8 md:p-10 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col shadow-sm hover:shadow-lg">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-3xl"></div>
+                  <h3 className="text-lg md:text-xl font-bold text-primary relative z-10">
                     {t('management.highlights.operating')}
                   </h3>
                 </div>
               </Reveal>
               <Reveal delay={100}>
-                <div className="p-6 md:p-7 bg-neutral-light rounded-lg">
-                  <h3 className="font-semibold text-lg mb-2 text-primary">
+                <div className="group relative bg-white p-8 md:p-10 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col shadow-sm hover:shadow-lg">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-3xl"></div>
+                  <h3 className="text-lg md:text-xl font-bold text-primary relative z-10">
                     {t('management.highlights.governance')}
                   </h3>
                 </div>
               </Reveal>
               <Reveal delay={200}>
-                <div className="p-6 md:p-7 bg-neutral-light rounded-lg">
-                  <h3 className="font-semibold text-lg mb-2 text-primary">
+                <div className="group relative bg-white p-8 md:p-10 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col shadow-sm hover:shadow-lg">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-3xl"></div>
+                  <h3 className="text-lg md:text-xl font-bold text-primary relative z-10">
                     {t('management.highlights.pmos')}
                   </h3>
                 </div>
@@ -91,24 +94,27 @@ export default async function ServicesPage() {
                 </p>
               </Reveal>
             </div>
-            <div className="mt-[var(--s-8)] grid md:grid-cols-3 grid-gap">
+            <div className="mt-[var(--s-8)] grid md:grid-cols-3 gap-6 md:gap-8">
               <Reveal>
-                <div className="p-6 md:p-7 bg-white rounded-lg shadow-sm">
-                  <h3 className="font-semibold text-lg mb-2 text-primary">
+                <div className="group relative bg-white p-8 md:p-10 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col shadow-sm hover:shadow-lg">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-3xl"></div>
+                  <h3 className="text-lg md:text-xl font-bold text-primary relative z-10">
                     {t('financial.highlights.planning')}
                   </h3>
                 </div>
               </Reveal>
               <Reveal delay={100}>
-                <div className="p-6 md:p-7 bg-white rounded-lg shadow-sm">
-                  <h3 className="font-semibold text-lg mb-2 text-primary">
+                <div className="group relative bg-white p-8 md:p-10 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col shadow-sm hover:shadow-lg">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-3xl"></div>
+                  <h3 className="text-lg md:text-xl font-bold text-primary relative z-10">
                     {t('financial.highlights.valuation')}
                   </h3>
                 </div>
               </Reveal>
               <Reveal delay={200}>
-                <div className="p-6 md:p-7 bg-white rounded-lg shadow-sm">
-                  <h3 className="font-semibold text-lg mb-2 text-primary">
+                <div className="group relative bg-white p-8 md:p-10 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col shadow-sm hover:shadow-lg">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-3xl"></div>
+                  <h3 className="text-lg md:text-xl font-bold text-primary relative z-10">
                     {t('financial.highlights.capital')}
                   </h3>
                 </div>
@@ -118,7 +124,7 @@ export default async function ServicesPage() {
         </section>
 
         {/* Contract Consultancy */}
-        <section className="section">
+        <section className="section bg-neutral-light transition-colors duration-300">
           <div className="container">
             <div className="h-group">
               <Reveal>
@@ -132,24 +138,27 @@ export default async function ServicesPage() {
                 </p>
               </Reveal>
             </div>
-            <div className="mt-[var(--s-8)] grid md:grid-cols-3 grid-gap">
+            <div className="mt-[var(--s-8)] grid md:grid-cols-3 gap-6 md:gap-8">
               <Reveal>
-                <div className="p-6 md:p-7 bg-neutral-light rounded-lg">
-                  <h3 className="font-semibold text-lg mb-2 text-primary">
+                <div className="group relative bg-white p-8 md:p-10 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col shadow-sm hover:shadow-lg">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-3xl"></div>
+                  <h3 className="text-lg md:text-xl font-bold text-primary relative z-10">
                     {t('contract.highlights.strategy')}
                   </h3>
                 </div>
               </Reveal>
               <Reveal delay={100}>
-                <div className="p-6 md:p-7 bg-neutral-light rounded-lg">
-                  <h3 className="font-semibold text-lg mb-2 text-primary">
+                <div className="group relative bg-white p-8 md:p-10 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col shadow-sm hover:shadow-lg">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-3xl"></div>
+                  <h3 className="text-lg md:text-xl font-bold text-primary relative z-10">
                     {t('contract.highlights.compliance')}
                   </h3>
                 </div>
               </Reveal>
               <Reveal delay={200}>
-                <div className="p-6 md:p-7 bg-neutral-light rounded-lg">
-                  <h3 className="font-semibold text-lg mb-2 text-primary">
+                <div className="group relative bg-white p-8 md:p-10 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col shadow-sm hover:shadow-lg">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-3xl"></div>
+                  <h3 className="text-lg md:text-xl font-bold text-primary relative z-10">
                     {t('contract.highlights.disputes')}
                   </h3>
                 </div>

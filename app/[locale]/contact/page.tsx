@@ -69,7 +69,7 @@ export default function ContactPage() {
         </header>
 
         {/* Contact Form Section */}
-        <section className="section transition-colors duration-300">
+        <section className="section bg-neutral-light transition-colors duration-300">
           <div className="container">
             <div className="grid md:grid-cols-2 grid-gap max-w-6xl mx-auto">
               <Reveal>
