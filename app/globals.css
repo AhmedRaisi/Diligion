@@ -109,29 +109,25 @@
 
   /* =============================================
      CLEAN GRADIENT TRANSITIONS
-     Simple, thin gradients between sections
+     Subtle, professional transitions between sections
      ============================================= */
   
-  /* Navy → Beige transition (80px) */
+  /* Navy → Beige transition */
   .gradient-navy-to-beige {
-    height: 80px;
+    height: 3rem;
     background: linear-gradient(
       to bottom,
       #002b57 0%,
-      #004a84 35%,
-      #c8b3a0 70%,
       #f4e0cf 100%
     );
   }
 
-  /* Beige → Navy transition (80px) */
+  /* Beige → Navy transition */
   .gradient-beige-to-navy {
-    height: 80px;
+    height: 3rem;
     background: linear-gradient(
       to bottom,
       #f4e0cf 0%,
-      #c8b3a0 30%,
-      #004a84 65%,
       #002b57 100%
     );
   }

@@ -30,7 +30,7 @@ export default async function SchedulePage() {
         </header>
 
         {/* Steps Section */}
-        <section className="section transition-colors duration-300">
+        <section className="section bg-neutral-light transition-colors duration-300">
           <div className="container">
             <div className="grid md:grid-cols-3 grid-gap mb-[var(--s-12)]">
               <Reveal>
@@ -77,14 +77,15 @@ export default async function SchedulePage() {
             <Reveal delay={300}>
               <div className="text-center max-w-2xl mx-auto">
                 <p className="text-primary mb-[var(--s-8)]">{t('note')}</p>
-                <div className="bg-neutral-light p-[var(--s-12)] rounded-lg">
-                  <p className="text-primary mb-[var(--s-6)]">
+                <div className="group relative bg-white p-8 md:p-12 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 shadow-sm hover:shadow-lg">
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-[4rem]"></div>
+                  <p className="text-primary mb-[var(--s-6)] relative z-10">
                     {/* TODO: Integrate Calendly or Cal.com widget here */}
                     Scheduling widget will be integrated here
                   </p>
                   <Link
                     href="/contact"
-                    className="inline-flex items-center justify-center bg-[var(--brand-accent)] hover:opacity-90 text-white px-6 py-3 rounded-lg font-semibold transition-opacity"
+                    className="inline-flex items-center justify-center bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                   >
                     {t('button')}
                   </Link>

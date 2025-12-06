@@ -29,35 +29,38 @@ export default async function AboutPage() {
         </header>
 
         {/* Pillars Section */}
-        <section className="section transition-colors duration-300">
+        <section className="section bg-neutral-light transition-colors duration-300">
           <div className="container">
-            <div className="grid md:grid-cols-3 grid-gap">
+            <div className="grid md:grid-cols-3 gap-6 md:gap-8">
               <Reveal>
-                <div>
-                  <h2 className="text-xl md:text-2xl font-bold mb-2 text-primary">
+                <div className="group relative bg-white p-8 md:p-10 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col shadow-sm hover:shadow-lg">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-3xl"></div>
+                  <h2 className="text-xl md:text-2xl font-bold mb-4 text-primary relative z-10">
                     {t('pillars.mission.title')}
                   </h2>
-                  <p className="text-sm md:text-base text-primary leading-relaxed">
+                  <p className="text-sm md:text-base text-primary leading-relaxed relative z-10">
                     {t('pillars.mission.description')}
                   </p>
                 </div>
               </Reveal>
               <Reveal delay={100}>
-                <div>
-                  <h2 className="text-xl md:text-2xl font-bold mb-2 text-primary">
+                <div className="group relative bg-white p-8 md:p-10 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col shadow-sm hover:shadow-lg">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-3xl"></div>
+                  <h2 className="text-xl md:text-2xl font-bold mb-4 text-primary relative z-10">
                     {t('pillars.vision.title')}
                   </h2>
-                  <p className="text-sm md:text-base text-primary leading-relaxed">
+                  <p className="text-sm md:text-base text-primary leading-relaxed relative z-10">
                     {t('pillars.vision.description')}
                   </p>
                 </div>
               </Reveal>
               <Reveal delay={200}>
-                <div>
-                  <h2 className="text-xl md:text-2xl font-bold mb-2 text-primary">
+                <div className="group relative bg-white p-8 md:p-10 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col shadow-sm hover:shadow-lg">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-3xl"></div>
+                  <h2 className="text-xl md:text-2xl font-bold mb-4 text-primary relative z-10">
                     {t('pillars.values.title')}
                   </h2>
-                  <p className="text-sm md:text-base text-primary leading-relaxed">
+                  <p className="text-sm md:text-base text-primary leading-relaxed relative z-10">
                     {t('pillars.values.description')}
                   </p>
                 </div>
@@ -104,7 +107,7 @@ export default async function AboutPage() {
         </section>
 
         {/* Approach Section */}
-        <section className="section">
+        <section className="section bg-neutral-light transition-colors duration-300">
           <div className="container">
             <div className="h-group">
               <Reveal>

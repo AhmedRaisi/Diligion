@@ -3,6 +3,7 @@ import { Link } from '@/lib/i18n/routing'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import Reveal from '@/components/Reveal'
+import CountUp from '@/components/CountUp'
 import Image from 'next/image'
 
 export default async function HomePage() {
@@ -98,18 +99,17 @@ export default async function HomePage() {
           </div>
         </section>
 
-        {/* Gradient Transition: Navy → Beige */}
-        <div className="gradient-navy-to-beige"></div>
-
         {/* Stats Section - Beige */}
         <section className="py-16 md:py-20 bg-[#f4e0cf]">
           <div className="container max-w-6xl mx-auto px-6 md:px-8">
             <ul className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-14">
               <Reveal>
                 <li className="text-center space-y-3">
-                  <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#002b57]">
-                    140+
-                  </div>
+                  <CountUp 
+                    end={140} 
+                    suffix="+"
+                    className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#002b57]"
+                  />
                   <div className="text-sm md:text-base text-[#7b7b7b] font-medium leading-relaxed max-w-xs mx-auto">
                     {t('stats.projects.label')}
                   </div>
@@ -117,9 +117,11 @@ export default async function HomePage() {
               </Reveal>
               <Reveal delay={100}>
                 <li className="text-center space-y-3">
-                  <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#002b57]">
-                    96%
-                  </div>
+                  <CountUp 
+                    end={96} 
+                    suffix="%"
+                    className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#002b57]"
+                  />
                   <div className="text-sm md:text-base text-[#7b7b7b] font-medium leading-relaxed max-w-xs mx-auto">
                     {t('stats.satisfaction.label')}
                   </div>
@@ -127,9 +129,11 @@ export default async function HomePage() {
               </Reveal>
               <Reveal delay={200}>
                 <li className="text-center space-y-3">
-                  <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#002b57]">
-                    18 yrs
-                  </div>
+                  <CountUp 
+                    end={18} 
+                    suffix=" yrs"
+                    className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#002b57]"
+                  />
                   <div className="text-sm md:text-base text-[#7b7b7b] font-medium leading-relaxed max-w-xs mx-auto">
                     {t('stats.experience.label')}
                   </div>
@@ -138,9 +142,6 @@ export default async function HomePage() {
             </ul>
           </div>
         </section>
-
-        {/* Gradient Transition: Beige → Navy */}
-        <div className="gradient-beige-to-navy"></div>
 
         {/* Values Section - Navy */}
         <section className="py-20 md:py-28 bg-[#002b57] text-white">
@@ -186,9 +187,6 @@ export default async function HomePage() {
             </div>
           </div>
         </section>
-
-        {/* Gradient Transition: Navy → Beige */}
-        <div className="gradient-navy-to-beige"></div>
 
         {/* Services Section - Beige */}
         <section className="py-20 md:py-28 bg-[#f4e0cf]">
@@ -267,9 +265,6 @@ export default async function HomePage() {
             </div>
           </div>
         </section>
-
-        {/* Gradient Transition: Beige → Navy */}
-        <div className="gradient-beige-to-navy"></div>
 
         {/* CTA Section - Navy */}
         <section className="py-20 md:py-28 bg-[#002b57] text-white">

@@ -80,7 +80,7 @@ export default async function ServicesPage() {
         </section>
 
         {/* Financial Consultancy */}
-        <section className="section bg-neutral-light transition-colors duration-300">
+        <section className="section bg-neutral-light transition-colors duration-300 border-t border-primary/5">
           <div className="container">
             <div className="h-group">
               <Reveal>
@@ -124,7 +124,7 @@ export default async function ServicesPage() {
         </section>
 
         {/* Contract Consultancy */}
-        <section className="section bg-neutral-light transition-colors duration-300">
+        <section className="section bg-neutral-light transition-colors duration-300 border-t border-primary/5">
           <div className="container">
             <div className="h-group">
               <Reveal>
@@ -168,7 +168,7 @@ export default async function ServicesPage() {
         </section>
 
         {/* Process Section */}
-        <section className="section bg-neutral-light transition-colors duration-300">
+        <section className="section bg-neutral-light transition-colors duration-300 border-t border-primary/5">
           <div className="container">
             <div className="h-group">
               <Reveal>
