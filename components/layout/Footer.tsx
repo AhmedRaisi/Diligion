@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="space-y-5">
             <div className="relative h-12 w-48">
               <Image
-                src="/assets/logo/full-white.svg"
+                src="/assets/logo/footerlogo.png"
                 alt="Diligion logo"
                 fill
                 sizes="192px"

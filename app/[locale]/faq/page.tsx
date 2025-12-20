@@ -58,17 +58,40 @@ export default async function FAQPage() {
         </header>
 
         {/* FAQ Items */}
-        <section className="section bg-neutral-light transition-colors duration-300">
+        <section className="section bg-gradient-to-b from-neutral-light to-white transition-colors duration-300">
           <div className="container max-w-4xl">
-            <div className="bg-white rounded-lg shadow-sm p-6 md:p-8">
-              <div className="space-y-[var(--s-0)]">
-                {faqItems.map((item, index) => (
-                  <Reveal key={item.key} delay={index * 50}>
-                    <FAQItem question={item.question} answer={item.answer} />
-                  </Reveal>
-                ))}
-              </div>
+            {/* FAQ Grid */}
+            <div className="space-y-4">
+              {faqItems.map((item, index) => (
+                <Reveal key={item.key} delay={index * 75}>
+                  <FAQItem 
+                    question={item.question} 
+                    answer={item.answer} 
+                    index={index}
+                  />
+                </Reveal>
+              ))}
             </div>
+
+            {/* Bottom CTA */}
+            <Reveal delay={400}>
+              <div className="mt-16 text-center">
+                <div className="inline-flex flex-col items-center gap-4 p-8 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl border border-primary/10">
+                  <p className="text-primary/70">
+                    Still have questions?
+                  </p>
+                  <a 
+                    href="/en/contact" 
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary-dark transition-colors"
+                  >
+                    Contact our team
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </Reveal>
           </div>
         </section>
       </main>

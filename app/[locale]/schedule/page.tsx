@@ -1,8 +1,30 @@
 import { getTranslations } from 'next-intl/server'
-import { Link } from '@/lib/i18n/routing'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import Reveal from '@/components/Reveal'
+import ScheduleTabs from '@/components/ScheduleTabs'
+
+// Consultant Calendly URLs - Replace with actual URLs when available
+const CONSULTANTS = [
+  {
+    id: 'yafin',
+    name: 'Yafin Al Kharusi',
+    role: 'Financial & Contract',
+    calendlyUrl: 'https://calendly.com/ahmedalraisi/30min', // TODO: Replace with Yafin's URL
+  },
+  {
+    id: 'shaima',
+    name: 'Shaima Al Balushi',
+    role: 'Management & Contract',
+    calendlyUrl: 'https://calendly.com/ahmedalraisi/30min', // TODO: Replace with Shaima's URL
+  },
+  {
+    id: 'buthaina',
+    name: 'Buthaina Al Zadjali',
+    role: 'Management',
+    calendlyUrl: 'https://calendly.com/ahmedalraisi/30min', // TODO: Replace with Buthaina's URL
+  },
+]
 
 export default async function SchedulePage() {
   const t = await getTranslations('schedule')
@@ -74,22 +96,11 @@ export default async function SchedulePage() {
               </Reveal>
             </div>
 
+            {/* Consultant Tabs with Calendly */}
             <Reveal delay={300}>
-              <div className="text-center max-w-2xl mx-auto">
-                <p className="text-primary mb-[var(--s-8)]">{t('note')}</p>
-                <div className="group relative bg-white p-8 md:p-12 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 shadow-sm hover:shadow-lg">
-                  <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-[4rem]"></div>
-                  <p className="text-primary mb-[var(--s-6)] relative z-10">
-                    {/* TODO: Integrate Calendly or Cal.com widget here */}
-                    Scheduling widget will be integrated here
-                  </p>
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center justify-center bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-                  >
-                    {t('button')}
-                  </Link>
-                </div>
+              <div>
+                <p className="text-primary text-center mb-[var(--s-6)]">{t('note')}</p>
+                <ScheduleTabs consultants={CONSULTANTS} />
               </div>
             </Reveal>
           </div>

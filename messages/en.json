@@ -82,11 +82,17 @@
     }
   },
   "about": {
+    "subnav": {
+      "overview": "Overview",
+      "board": "Board of Directors",
+      "management": "Management Team"
+    },
     "hero": {
       "title": "A consultancy rooted in diligence, shaped by vision",
-      "subtitle": "Diligion blends regional understanding with global benchmarks to enable sustainable growth for Oman’s organisations."
+      "subtitle": "Diligion blends regional understanding with global benchmarks to enable sustainable growth for Oman's organisations."
     },
     "pillars": {
+      "title": "Who We Are",
       "mission": {
         "title": "Our mission",
         "description": "To empower leaders with clarity, confidence and actionable insight across complex initiatives."
@@ -100,8 +106,29 @@
         "description": "Integrity, precision and responsible stewardship define every engagement we take on."
       }
     },
-    "team": {
-      "title": "Leadership team",
+    "board": {
+      "title": "Board of Directors",
+      "subtitle": "Strategic leaders providing governance and direction to our organization.",
+      "members": {
+        "chairman": {
+          "name": "Board Chairman",
+          "role": "Chairman of the Board",
+          "bio": "Provides strategic direction and governance oversight, ensuring alignment with organizational mission and stakeholder interests."
+        },
+        "viceChairman": {
+          "name": "Vice Chairman",
+          "role": "Vice Chairman of the Board",
+          "bio": "Supports board leadership and contributes to strategic decision-making with extensive industry experience."
+        },
+        "advisor": {
+          "name": "Advisory Board Member",
+          "role": "Strategic Advisor",
+          "bio": "Provides governance guidance and oversees quality assurance on priority engagements."
+        }
+      }
+    },
+    "management": {
+      "title": "Management Team",
       "subtitle": "Experienced consultants guiding every engagement with diligence and vision.",
       "members": {
         "yafin": {
@@ -123,11 +150,6 @@
           "name": "Senior Consultant",
           "role": "Management & Financial Advisory",
           "bio": "Brings analytical depth and on-the-ground experience supporting strategic initiatives across multiple sectors."
-        },
-        "advisor": {
-          "name": "Advisory Board Member",
-          "role": "Strategic Advisor",
-          "bio": "Provides governance guidance and oversees quality assurance on priority engagements."
         }
       }
     },

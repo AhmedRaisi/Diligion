@@ -2,6 +2,7 @@ import { getTranslations } from 'next-intl/server'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import Reveal from '@/components/Reveal'
+import AboutPageContent from '@/components/AboutPageContent'
 
 export default async function AboutPage() {
   const t = await getTranslations('about')
@@ -28,137 +29,93 @@ export default async function AboutPage() {
           </div>
         </header>
 
-        {/* Pillars Section */}
-        <section className="section bg-neutral-light transition-colors duration-300">
-          <div className="container">
-            <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-              <Reveal>
-                <div className="group relative bg-white p-8 md:p-10 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col shadow-sm hover:shadow-lg">
-                  <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-3xl"></div>
-                  <h2 className="text-xl md:text-2xl font-bold mb-4 text-primary relative z-10">
-                    {t('pillars.mission.title')}
-                  </h2>
-                  <p className="text-sm md:text-base text-primary leading-relaxed relative z-10">
-                    {t('pillars.mission.description')}
-                  </p>
-                </div>
-              </Reveal>
-              <Reveal delay={100}>
-                <div className="group relative bg-white p-8 md:p-10 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col shadow-sm hover:shadow-lg">
-                  <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-3xl"></div>
-                  <h2 className="text-xl md:text-2xl font-bold mb-4 text-primary relative z-10">
-                    {t('pillars.vision.title')}
-                  </h2>
-                  <p className="text-sm md:text-base text-primary leading-relaxed relative z-10">
-                    {t('pillars.vision.description')}
-                  </p>
-                </div>
-              </Reveal>
-              <Reveal delay={200}>
-                <div className="group relative bg-white p-8 md:p-10 rounded-2xl border-2 border-primary/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col shadow-sm hover:shadow-lg">
-                  <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-3xl"></div>
-                  <h2 className="text-xl md:text-2xl font-bold mb-4 text-primary relative z-10">
-                    {t('pillars.values.title')}
-                  </h2>
-                  <p className="text-sm md:text-base text-primary leading-relaxed relative z-10">
-                    {t('pillars.values.description')}
-                  </p>
-                </div>
-              </Reveal>
-            </div>
-          </div>
-        </section>
-
-        {/* Team Section */}
-        <section className="section bg-neutral-light transition-colors duration-300">
-          <div className="container">
-            <div className="h-group">
-              <Reveal>
-                <h2 className="text-3xl md:text-4xl font-semibold text-primary">
-                  {t('team.title')}
-                </h2>
-              </Reveal>
-              <Reveal delay={100}>
-                <p className="text-primary max-w-2xl">
-                  {t('team.subtitle')}
-                </p>
-              </Reveal>
-            </div>
-            <div className="mt-[var(--s-8)] grid md:grid-cols-2 lg:grid-cols-3 grid-gap">
-              {(['yafin', 'shaima', 'buthaina', 'consultant', 'advisor'] as const).map(
-                (member, index) => (
-                  <Reveal key={member} delay={index * 100}>
-                    <div className="bg-white p-6 md:p-7 rounded-lg shadow-sm">
-                      <h3 className="text-lg md:text-xl font-bold mb-2 text-primary">
-                        {t(`team.members.${member}.name`)}
-                      </h3>
-                      <p className="text-accent font-semibold mb-2">
-                        {t(`team.members.${member}.role`)}
-                      </p>
-                      <p className="text-sm md:text-base text-primary leading-relaxed">
-                        {t(`team.members.${member}.bio`)}
-                      </p>
-                    </div>
-                  </Reveal>
-                )
-              )}
-            </div>
-          </div>
-        </section>
-
-        {/* Approach Section */}
-        <section className="section bg-neutral-light transition-colors duration-300">
-          <div className="container">
-            <div className="h-group">
-              <Reveal>
-                <h2 className="text-3xl md:text-4xl font-semibold text-primary">
-                  {t('approach.title')}
-                </h2>
-              </Reveal>
-            </div>
-            <div className="mt-[var(--s-8)] grid md:grid-cols-3 grid-gap">
-              <Reveal>
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-accent">1</span>
-                  </div>
-                  <h3 className="text-lg md:text-xl font-bold mb-2 text-primary">
-                    {t('approach.steps.diagnose.title')}
-                  </h3>
-                  <p className="text-sm md:text-base text-primary leading-relaxed">
-                    {t('approach.steps.diagnose.description')}
-                  </p>
-                </div>
-              </Reveal>
-              <Reveal delay={100}>
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-accent">2</span>
-                  </div>
-                  <h3 className="text-lg md:text-xl font-bold mb-2 text-primary">
-                    {t('approach.steps.design.title')}
-                  </h3>
-                  <p className="text-sm md:text-base text-primary leading-relaxed">
-                    {t('approach.steps.design.description')}
-                  </p>
-                </div>
-              </Reveal>
-              <Reveal delay={200}>
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl font-bold text-accent">3</span>
-                  </div>
-                  <h3 className="text-lg md:text-xl font-bold mb-2 text-primary">
-                    {t('approach.steps.deliver.title')}
-                  </h3>
-                  <p className="text-sm md:text-base text-primary leading-relaxed">
-                    {t('approach.steps.deliver.description')}
-                  </p>
-                </div>
-              </Reveal>
-            </div>
-          </div>
-        </section>
+        {/* Tabbed Content */}
+        <AboutPageContent
+          subnavLabels={{
+            overview: t('subnav.overview'),
+            board: t('subnav.board'),
+            management: t('subnav.management'),
+          }}
+          pillars={{
+            title: t('pillars.title'),
+            mission: {
+              title: t('pillars.mission.title'),
+              description: t('pillars.mission.description'),
+            },
+            vision: {
+              title: t('pillars.vision.title'),
+              description: t('pillars.vision.description'),
+            },
+            values: {
+              title: t('pillars.values.title'),
+              description: t('pillars.values.description'),
+            },
+          }}
+          approach={{
+            title: t('approach.title'),
+            steps: {
+              diagnose: {
+                title: t('approach.steps.diagnose.title'),
+                description: t('approach.steps.diagnose.description'),
+              },
+              design: {
+                title: t('approach.steps.design.title'),
+                description: t('approach.steps.design.description'),
+              },
+              deliver: {
+                title: t('approach.steps.deliver.title'),
+                description: t('approach.steps.deliver.description'),
+              },
+            },
+          }}
+          board={{
+            title: t('board.title'),
+            subtitle: t('board.subtitle'),
+            members: [
+              {
+                name: t('board.members.chairman.name'),
+                role: t('board.members.chairman.role'),
+                bio: t('board.members.chairman.bio'),
+              },
+              {
+                name: t('board.members.viceChairman.name'),
+                role: t('board.members.viceChairman.role'),
+                bio: t('board.members.viceChairman.bio'),
+              },
+              {
+                name: t('board.members.advisor.name'),
+                role: t('board.members.advisor.role'),
+                bio: t('board.members.advisor.bio'),
+              },
+            ],
+          }}
+          management={{
+            title: t('management.title'),
+            subtitle: t('management.subtitle'),
+            members: [
+              {
+                name: t('management.members.yafin.name'),
+                role: t('management.members.yafin.role'),
+                bio: t('management.members.yafin.bio'),
+              },
+              {
+                name: t('management.members.shaima.name'),
+                role: t('management.members.shaima.role'),
+                bio: t('management.members.shaima.bio'),
+              },
+              {
+                name: t('management.members.buthaina.name'),
+                role: t('management.members.buthaina.role'),
+                bio: t('management.members.buthaina.bio'),
+              },
+              {
+                name: t('management.members.consultant.name'),
+                role: t('management.members.consultant.role'),
+                bio: t('management.members.consultant.bio'),
+              },
+            ],
+          }}
+        />
       </main>
       <Footer />
     </>
